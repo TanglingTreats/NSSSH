@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include "file_parse/file_parse.h"
 
 int main(int args, char** argv)
 {
-    printf("Something here\n");
+    printf("%s\n", readFile());
     return 0;
 }
