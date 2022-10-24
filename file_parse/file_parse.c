@@ -1,6 +1,6 @@
 #include "file_parse.h"
 
-char* readFile()
+char* readFile(char* path)
 {
-    return "Text";
+    return "Reading file";
 }
