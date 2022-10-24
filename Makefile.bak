@@ -11,8 +11,8 @@ LIB=
 
 INCLUDE=-I.
 
-CFLAGS=-std=c99
-ALL_CFLAGS= -Wall -Werror $(INCLUDE) $(CFLAGS) -o
+CFLAGS=-std=c99 -o
+ALL_CFLAGS= -Wall -Werror $(INCLUDE) $(CFLAGS)
 
 vpath %.o build
 
@@ -37,4 +37,3 @@ depend:
 
 build/file_parse.o: file_parse/file_parse.c file_parse/file_parse.h
 	$(CC) $(CFLAGS) -c $< -o $@
-# DO NOT DELETE
